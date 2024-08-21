@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=S,initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <label for "coursename">Your course name : <input class="course" type="text"></input></label>
+
+    <script>
+
+        alert(document.querySelector('.course'));
+
+        var txtCourse = document.querySelector('.course');
+        //WILL NOT USE "GET ELEMENT BY ID" only ^ document.querySelector
+
+        txtCourse.addEventListener('focusout',
+        (event) => { alert(txtCourse.value) })
+        // RO function (=>)
+
+    </script>
+
+</body>
+<!--<body>
+    <p id="welcomePara">
+        Welcome to CIT215
+    </p>
+</body>
+<script>
+//    alert("Hello World");
+console.log("Hello World");
+var paraText=document.querySelector("#welcomePara");
+//console.log(document.querySelector("#welcomePara"));
+console.log(paraText.textContent);
+
+</script>
+-->
+</html>
